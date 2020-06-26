@@ -1,0 +1,19 @@
+
+.titulo-texto h1 {
+    margin-bottom: 1.8%;
+    font-family: Roboto-Bold;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+}
+
+.corpo-texto p{
+
+    margin-bottom: 1.8%;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
