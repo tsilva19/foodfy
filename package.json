@@ -1,0 +1,23 @@
+{
+  "name": "foodfy",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">\r     <img alt=\"Launchbase\" src=\"https://storage.googleapis.com/golden-wind/bootcamp-launchbase/logo.png\" width=\"400px\" />\r </h1>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsilva19/foodfy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsilva19/foodfy/issues"
+  },
+  "homepage": "https://github.com/tsilva19/foodfy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
