@@ -1,129 +1,82 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+    margin: 0
 }
 
-
-html {
-    font-family: Roboto, sans-serif;
-}
-
-body {
-    background: #ffffff;
-    -webkit-font-smoothing: antialiased;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: Ubuntu, sans-serif;
-    
-}
-
-#page-home .content {
-    width: 90%;
-    max-width: 1100px;
-    height:  100%;
-
-    margin: 0 auto;
+body{
+    background-color: white;
     display: flex;
     flex-direction: column;
-    
+    height: 100vh;
+    font-family: 'Roboto';
 }
 
+.page-home {
+    max-width: 900px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
 
-
-#page-home header {
-
-    margin-top: 16px;
+.page-header{
     display: flex;
     align-items: center;
-    margin-bottom: 4.5%;
-
-    
+    margin-bottom: 30px;
 }
 
-
-
-#page-home header img {
-    margin-right: 8.7%;
-    
-    font-size: 36px;
-   
+.page-links {
+  margin:0px 122.4px;
 }
 
-#page-home header a {
-    display: flex;
-    color: #111111;
-    font-family: Roboto;
-    font-size: 18px;
-    line-height: 28px;
-    margin: 0 16px;
+.page-links a {
+    margin: 0 30px;
     text-decoration: none;
-
-    
- 
-}
-
-#page-home header a:hover {
-    font-weight: bold;
- 
-}
-
-
-#page-home .jumbotrom {
-    
-    width: 100%;
-    height: 60%;
-    background: #FBDFDB 100%;
-    border-radius: 30px;
- 
-
-    
-}
-
-
-#page-home .jumbotrom h1{
-    font-size: 2.5rem;
-    margin-bottom: .5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    padding: 10.6% 50.1% 0.9% 4.3%;
-    font-family: Roboto-Bold;
     color: #111111;
-}
-
-/* #page-home .jumbotrom h1{
-    padding: 10.6% 41.1% 19.1% 4.3%;
     font-family: Roboto;
-    font-style: bold;
-} */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px
+}
 
+.footer-class {
+    width: 100%;
+    align-items: flex-end;
+}
+footer {
+    background-color: grey;
+    padding: 1px;
+}
 
-
-#page-home .jumbotrom p{
-    margin-top: 0;
-    margin-bottom: 1rem;
-    width: 29%;
-    height: 7.6%;
-    padding: 0% 41.1% 15% 4.3%;
-    opacity: 70%;
+footer h3 {
     font-family: Roboto;
-    font-size: 18px;
-    color: #000000;
-    line-height: 28px;
-
+    font-weight: 400;
+    font-size: 14px;
+    color: #111111;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 23px;
+    margin-bottom: 23px;
 }
 
-#page-home .jumbotrom img{
-    margin-top: -95%;
-    margin-left: 70%;
-    margin-right: 7%;
-    margin-bottom: 3.5%;
-
+.page-erro {
+    width: 800px;
+    height: 72vh;
+    color: #111111;
+    text-align: center;
+    font-family: 'Roboto';
+    margin: 30px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#page-home article h4{
-    margin-top: 4.5%;
+.page-erro img {
+    width: 80px;
+    height: 80px;
+}
 
-    margin-bottom: 1.8%;
-
+.page-erro h2 {
+    margin-top: 10px;
+    font-weight: 400;
 }

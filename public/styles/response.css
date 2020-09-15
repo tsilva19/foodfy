@@ -44,9 +44,14 @@
     }
 }
 
-/* === ABOUT === */
 
-.page-about{
+
+.titulo-texto{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.corpo-texto {
     margin-left: 20px;
     margin-right: 20px;
 }

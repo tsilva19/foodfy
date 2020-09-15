@@ -1,202 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foodfy</title>
+{% extends "layout.njk" %}
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/style.css">
-    <link rel="stylesheet" href="/styles/page-home.css">
+{% block title %}
+    <title>Foodfy - Receitas</title>
+{% endblock title %}
 
+{% block styles %}
+    <link rel="stylesheet" href="/styles/recipes.css">
+{% endblock styles %}
 
-</head>
-<body>
-    <div id="page-home">
-        
-        <div class="content">
-            
-            <header>
-                <a href="index.html"><img src="/assets/logo.png" alt="LogoMarca"></a>
-                
-                <a href="sobre.html">Sobre</a>
-                <a href="receitas.html">Receitas</a>
-           
-            </header>
+{% block content %}
+    <div class="cards">
+                    {% for item in items %}
 
-            <section class="cards" id="receitas">
-                <div class="card" id="burger">
-                    <div class="card-img" >
-                        <img src="/assets/burger.png" alt="burger">
+                    <div class="card" id="{{ item.id }}">
+                         <div class="card-image">
+                            <img src="{{ item.image }}" alt="{{item.title}}">
+                         </div>
+                                       
+                        <div class="card__content">
+                            <h2>{{ item.title }}</h2>
+                        </div>
+
+                        <div class="card__autor">
+                            <h3>por {{ item.author }}</h3>
+                        </div>
+
                     </div>
-                    <div class="card__content">
-                        <p class="titulo"> Triplo bacon burger</p>
-                    </div>
-                    <div class="card__autor">
-                        <p class="texto">por Jorge Relato</p>
-                    </div>
+                    {%endfor %}
                 </div>
-                <div class="card" id="pizza">
-                    <div class="card-img" >
-                        <img src="/assets/pizza.png" alt="pizza">
-                    </div>
-                    <div class="card__content">
-                        <p class="titulo"> Triplo bacon burger</p>
-                    </div>
-                    <div class="card__autor">
-                        <p class="texto" >por Jorge Relato</p>
-                    </div>
-                </div>
-                <div class="card" id="espaguete">
-                    <div class="card-img" >
-                        <img src="/assets/espaguete.png" alt="espaguete">
-                    </div>
-                    <div class="card__content">
-                        <p class="titulo"> Triplo bacon burger</p>
-                    </div>
-                    <div class="card__autor">
-                        <p class="texto">por Jorge Relato</p>
-                    </div>
-                </div>
-                <div class="card" id="lasanha">
-                    <div class="card-img" >
-                        <img src="/assets/lasanha.png" alt="lasanha">
-                    </div>
-                    <div class="card__content">
-                        <p class="titulo"> Triplo bacon burger</p>
-                    </div>
-                    <div class="card__autor">
-                        <p class="texto">por Jorge Relato</p>
-                    </div>
-                </div>
-                <div class="card" id="doce">
-                    <div class="card-img" >
-                        <img src="/assets/doce.png" alt="doce">
-                    </div>
-                    <div class="card__content">
-                        <p class="titulo"> Triplo bacon burger</p>
-                    </div>
-                    <div class="card__autor">
-                        <p class="texto">por Jorge Relato</p>
-                    </div>
-                </div>
-                <div class="card" id="asinhas">
-                    <div class="card-img" >
-                        <img src="/assets/asinhas.png" alt="asinhas">
-                    </div>
-                    <div class="card__content">
-                        <p class="titulo">  Triplo bacon burger</p>
-                    </div>
-                    <div class="card__autor">
-                        <p class="texto">por Jorge Relato</p>
-                    </div>
-                </div>
+ 
+{% endblock content %}
 
-                <div class="card" id="burger">
-                    <div class="card-img" >
-                        <img src="/assets/burger.png" alt="burger">
-                    </div>
-                    <div class="card__content">
-                        <p class="titulo"> Triplo bacon burger</p>
-                    </div>
-                    <div class="card__autor">
-                        <p class="texto">por Jorge Relato</p>
-                    </div>
-                </div>
-                <div class="card" id="pizza">
-                    <div class="card-img" >
-                        <img src="/assets/pizza.png" alt="pizza">
-                    </div>
-                    <div class="card__content">
-                        <p class="titulo"> Triplo bacon burger</p>
-                    </div>
-                    <div class="card__autor">
-                        <p class="texto">por Jorge Relato</p>
-                    </div>
-                </div>
-                <div class="card" id="espaguete">
-                    <div class="card-img" >
-                        <img src="/assets/espaguete.png" alt="espaguete">
-                    </div>
-                    <div class="card__content">
-                        <p class="titulo"> Triplo bacon burger</p>
-                    </div>
-                    <div class="card__autor">
-                        <p class="texto">por Jorge Relato</p>
-                    </div>
-                </div>
-                <div class="card" id="lasanha">
-                    <div class="card-img" >
-                        <img src="/assets/lasanha.png" alt="lasanha">
-                    </div>
-                    <div class="card__content">
-                        <p class="titulo"> Triplo bacon burger</p>
-                    </div>
-                    <div class="card__autor">
-                        <p class="texto">por Jorge Relato</p>
-                    </div>
-                </div>
-                <div class="card" id="doce">
-                    <div class="card-img" >
-                        <img src="/assets/doce.png" alt="doce">
-                    </div>
-                    <div class="card__content">
-                        <p class="titulo"> Triplo bacon burger</p>
-                    </div>
-                    <div class="card__autor">
-                        <p class="texto">por Jorge Relato</p>
-                    </div>
-                </div>
-                <div class="card" id="asinhas">
-                    <div class="card-img" >
-                        <img src="/assets/asinhas.png" alt="asinhas">
-                    </div>
-                    <div class="card__content">
-                        <p class="titulo"> Triplo bacon burger</p>
-                    </div>
-                    <div class="card__autor">
-                        <p class="texto">por Jorge Relato</p>
-                    </div>
-                </div>
-              
-            </section>
-
-            
-
-        
-    
-        
-        </div>
-            
-     
-
-    </div>
-
-    <div class="modal-overlay">
-                <div class="modal">
-
-                <a class="close-modal">Fechar modal</a>
-
-                <div class="modal-content">
-                    <img src="" alt="">
-                    
-                    <div>
-                        <h4></h4>
-                        <p></p> 
-                    </div>
-                    
-                </div>
-
-                </div>
-            </div>
-
-    <footer>
-            <p>Todos os direitos reservados</p>
-    </footer>
-
-    <script src="scripts.js"></script>
-
-    
-    
-</body>
-</html>
+{% block script %}
+    <script src="/scripts/scripts.js"></script>
+{% endblock script %}

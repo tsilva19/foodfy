@@ -1,0 +1,36 @@
+.cards {
+    max-width: 100%;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    font-family: Roboto;
+}
+
+.card .card-image img {
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.card__content,
+.card__autor {
+    padding: 1.8%;
+}
+
+ .card__content {
+    font-family: Roboto;
+    font-style: bold;
+    font-size: 18px;
+    color: #111111;
+}
+
+.card__autor {
+    font-family: Roboto;
+    font-size: 14px;
+    color: #777777;
+}

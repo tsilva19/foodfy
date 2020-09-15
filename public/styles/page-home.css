@@ -1,115 +1,60 @@
-/* #page-home {
-    height: 100vh;
-} */
+.page-info{
+    background: #FBDFDB;
+    border-radius: 30px;
+    font-family: Roboto;
+    width: 940px;
+    height: 366px;
+}
 
-#page-home .content {
-    width: 90%;
-    max-width: 1100px;
-    height:  100%;
+.page-info-content{
+    display: flex;
+}
 
-    margin: 0 auto;
+.page-info-text{
     display: flex;
     flex-direction: column;
+    width: 316px;
+    margin: 117px 248px 117px 60px;
     
 }
 
-
-
-#page-home header {
-
-    margin-top: 16px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 4.5%;
-
-    
-}
-
-
-
-#page-home header img {
-    margin-right: 8.7%;
-    
-    font-size: 36px;
-   
-}
-
-#page-home header a {
-    display: flex;
+.page-info-text h1 {
+    font-size: 32px;
     color: #111111;
-    font-family: Roboto;
-    font-size: 18px;
-    line-height: 28px;
-    margin: 0 16px;
-    text-decoration: none;
-
-    
- 
+    line-height: 38px;
+    height: 38px;
+    margin-bottom: 10px;
+    width: 305px;
 }
 
-#page-home header a:hover {
-    font-weight: bold;
- 
-}
-
-
-#page-home .jumbotrom {
-    
-    width: 100%;
-    height: 60%;
-    background: #FBDFDB 100%;
-    border-radius: 30px;
- 
-
-    
-}
-
-
-#page-home .jumbotrom h1{
-    font-size: 2.5rem;
-    margin-bottom: .5rem;
-    font-weight: 500;
-    line-height: 1.2;
-    padding: 10.6% 50.1% 0.9% 4.3%;
-    font-family: Roboto-Bold;
-    color: #111111;
-}
-
-/* #page-home .jumbotrom h1{
-    padding: 10.6% 41.1% 19.1% 4.3%;
-    font-family: Roboto;
-    font-style: bold;
-} */
-
-
-
-#page-home .jumbotrom p{
-    margin-top: 0;
-    margin-bottom: 1rem;
-    width: 29%;
-    height: 7.6%;
-    padding: 0% 41.1% 15% 4.3%;
-    opacity: 70%;
-    font-family: Roboto;
+.page-info-text p {
+    opacity: 0.7;
     font-size: 18px;
     color: #000000;
     line-height: 28px;
-
+    height: 84px;
+    font-weight: 500;
+    text-align: justify;
+    width: 320px;
 }
 
-#page-home .jumbotrom img{
+.page-info-image img {
+
     margin-top: -95%;
     margin-left: 70%;
     margin-right: 7%;
     margin-bottom: 3.5%;
-
 }
 
-#page-home article h4{
-    margin-top: 4.5%;
-
-    margin-bottom: 1.8%;
-
+.recipe-title h1 {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    width: 174px;
+    line-height: 28px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
 .cards {
@@ -118,12 +63,16 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-
 }
 
-.card-img img {
+.card {
+    font-family: Roboto;
+}
+
+.card .card-image img {
     width: 100%;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .card__content,
@@ -131,7 +80,7 @@
     padding: 1.8%;
 }
 
-.card__content {
+ .card__content {
     font-family: Roboto;
     font-style: bold;
     font-size: 18px;
@@ -143,84 +92,3 @@
     font-size: 14px;
     color: #777777;
 }
-
-/*=== MODAL ===*/
-.modal-overlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    opacity: 0;
-    visibility: hidden;
-  }
-  
-  .modal {
-    background: #FFFFFF;
-    border-radius: 16px;
-    width: 560px;
-    height: 313px;
-    margin: 5vh auto;
-    position: relative;
-  }
-  
-  .modal .close-modal {
-    font-size: 16px;
-    color: #999999;
-    position: absolute;
-    left: 230px;
-    bottom: 20px;
-    cursor: pointer;
-  }
-  
-  /*=== MODAL.ACTIVE ===*/
-  .modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .modal-content img {
-    width: 520px;
-    height: 140px;
-    position: absolute;
-    margin: 20px 20px 0 20px;
-  }
-  
-  .modal-content div{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .modal-content h4{
-    font-size: 24px;
-    color: #111111;
-    position: absolute;
-    margin: 190px auto;
-  }
-  
-  .modal-content p{
-    font-size: 17px;
-    color: #777777;
-    position: absolute;
-    margin: 215px auto;
-  }
-
-footer{
-    position: flex;
-    bottom: 0;
-    width: 100%;
-    height: 5.6%;
-    background: #EEEEEE;
-    padding-top: 30px;
-    padding-bottom: 30px
-    
-}
-footer p {
-    font-family: Roboto-Regular;
-font-size: 14px;
-color: #999999;
-text-align: center;
-}
-
-
